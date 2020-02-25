@@ -10,14 +10,18 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Usage
+```
 from md_reader import reader
 reader.read('/lib/md_reader/readme.md')
+```
 
+```
 from md_reader import downloader
 downloader.get('https://annejan.com/media/de_rode_hack.md', 'de_rode_hack.md')
+````
 
 ## Parameters
-reader.read(path, render, start, lines)
+`reader.read(path, render, start, lines)`
 
 path: the full path of markdown file to read
 render: 'better', 'worse', 'expirimental'
